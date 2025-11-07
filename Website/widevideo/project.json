@@ -1,0 +1,43 @@
+{
+  "activity": {
+    "time": 0
+  },
+  "metadata": {
+    "appVersion": "1.6.32",
+    "createdTime": 1761602271359,
+    "updatedTime": 1761602271359,
+    "version": 0
+  },
+  "output": {
+    "id": "MP4_H264_AAC",
+    "audio": {
+      "-acodec": "aac"
+    },
+    "video": {
+      "-vcodec": "h264"
+    },
+    "format": {
+      "-f": "mp4"
+    },
+    "browserVideoEncoder": "prefer",
+    "default": true
+  },
+  "presentation": {
+    "layer": [
+      {
+        "clip": []
+      }
+    ],
+    "scene": {
+      "duration": 60,
+      "canvas": {
+        "width": 1280,
+        "height": 720,
+        "background": "#000000"
+      },
+      "frameRate": 25,
+      "smartDuration": true
+    }
+  },
+  "ui": {}
+}

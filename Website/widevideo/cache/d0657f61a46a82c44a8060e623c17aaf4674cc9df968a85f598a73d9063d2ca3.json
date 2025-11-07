@@ -1,0 +1,1 @@
+{"start":0,"duration":26.13,"muxers":["mov","mp4","m4a","3gp","3g2","mj2"],"streams":[{"kind":"video","width":3840,"height":2160,"codec":"h264","frameRate":30,"index":0,"pixelFormat":"yuv420p"},{"kind":"audio","bitrate":192000,"channels":"stereo","codec":"aac","index":1,"sampleRate":48000}]}

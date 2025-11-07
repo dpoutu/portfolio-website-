@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Huinga Hub</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="hero">
+        <h1>Huinga Hub</h1>
+        <h2>A better way to hui</h2>
+        <p>
+          Nau mai, haere mai! This is a place to make hui simple. From
+          fundraising to managing events, everything you need is in one space.
+        </p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#huis">Active Huis</a></li>
+          <li><a href="#fundraising">Fundraising</a></li>
+          <li><a href="#create">Host a Hui</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Section: Active Huis -->
+      <section id="huis">
+        <h2>Active Huis</h2>
+        <p>Browse current hui happening across different marae.</p>
+        <div class="card-container">
+          <div class="card">
+            <h3>Whānau Hui - Te Aroha Marae</h3>
+            <p>Date: 15 Sept 2025</p>
+            <p>Focus: Planning upcoming whānau reunion.</p>
+            <button>View Details</button>
+          </div>
+          <div class="card">
+            <h3>Rangatira Hui - Ngāti Kahungunu</h3>
+            <p>Date: 20 Sept 2025</p>
+            <p>Focus: Cultural revitalisation projects.</p>
+            <button>View Details</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Fundraising -->
+      <section id="fundraising">
+        <h2>Fundraising Campaigns</h2>
+        <p>Support marae initiatives by donating or contributing.</p>
+        <div class="card-container">
+          <div class="card">
+            <h3>Te Kōhanga Marae Renovation</h3>
+            <p>Goal: $10,000 | Raised: $4,250</p>
+            <progress value="4250" max="10000"></progress>
+            <button>Donate Now</button>
+          </div>
+          <div class="card">
+            <h3>Wharekai Upgrade - Rongoā Marae</h3>
+            <p>Goal: $5,000 | Raised: $3,200</p>
+            <progress value="3200" max="5000"></progress>
+            <button>Donate Now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Create a Hui -->
+      <section id="create">
+        <h2>Host a Hui or Fundraiser</h2>
+        <form>
+          <label for="marae">Marae Name:</label><br />
+          <input type="text" id="marae" name="marae" required /><br /><br />
+
+          <label for="hui-title">Hui Title:</label><br />
+          <input
+            type="text"
+            id="hui-title"
+            name="hui-title"
+            required
+          /><br /><br />
+
+          <label for="date">Date:</label><br />
+          <input type="date" id="date" name="date" required /><br /><br />
+
+          <label for="fundraising">Fundraising Goal ($):</label><br />
+          <input
+            type="number"
+            id="fundraising"
+            name="fundraising"
+          /><br /><br />
+
+          <button type="submit">Create Hui</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Huinga Hub | Bringing whānau together</p>
+    </footer>
+  </body>
+</html>

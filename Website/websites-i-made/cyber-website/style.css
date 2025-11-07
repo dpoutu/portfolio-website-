@@ -1,0 +1,107 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh; /* Ensures vertical centering */
+    max-width: 700px; /* Limits content width */
+    margin: auto; /* Centers content horizontally */
+    border: 5px solid rgb(48, 47, 47);
+    border-radius: 20px; 
+    padding: 50px;
+    background-color: rgb(243, 225, 225) !important;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+} 
+.h1class{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid rgb(48, 47, 47);
+    border-radius: 30px; 
+    padding: 50px;
+
+}
+.second_h1{
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid rgb(48, 47, 47);
+    border-radius: 30px; 
+    padding: 25px;
+
+
+}
+.borders{
+  display: center;
+
+}
+#first_p{
+    font-family: 'Times New Roman', Times, serif;
+}
+#second_p{
+    font-family: 'Times New Roman', Times, serif;  
+}
+#first_b_p{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+}
+#first_b_p_two{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+}
+#second_b_p{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px; 
+}
+#second_b_p_two{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+}
+#third_b_p{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+}
+#third_b_p_two{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+}
+#fourth_b_p{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+}
+#fourth_b_p_two{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+}
+#five_b_p{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+}
+#five_b_p_two{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+}
+#summary{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+}
