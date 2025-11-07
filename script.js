@@ -1,5 +1,8 @@
 // Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function() {
+    // Constants
+    const MOBILE_BREAKPOINT = 768;
+    
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
 
@@ -25,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navItems = document.querySelectorAll('.nav-links a');
     navItems.forEach(item => {
         item.addEventListener('click', function() {
-            if (window.innerWidth <= 768) {
+            if (window.innerWidth <= MOBILE_BREAKPOINT) {
                 navLinks.classList.remove('active');
                 const spans = hamburger.querySelectorAll('span');
                 spans[0].style.transform = 'none';
@@ -106,7 +109,7 @@ window.addEventListener('scroll', function() {
             button.setAttribute('aria-label', 'Scroll to top');
             document.body.appendChild(button);
             
-            // Style the button
+            // Style the button using CSS classes
             button.style.cssText = `
                 position: fixed;
                 bottom: 30px;
@@ -114,12 +117,12 @@ window.addEventListener('scroll', function() {
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
-                background: linear-gradient(135deg, #6366f1, #8b5cf6);
+                background: var(--primary-color);
                 color: white;
                 border: none;
                 font-size: 24px;
                 cursor: pointer;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                box-shadow: var(--shadow);
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
                 z-index: 1000;
                 opacity: 0;
@@ -135,12 +138,12 @@ window.addEventListener('scroll', function() {
             
             button.addEventListener('mouseenter', function() {
                 button.style.transform = 'translateY(-3px)';
-                button.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.15)';
+                button.style.boxShadow = 'var(--shadow-lg)';
             });
             
             button.addEventListener('mouseleave', function() {
                 button.style.transform = 'translateY(0)';
-                button.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+                button.style.boxShadow = 'var(--shadow)';
             });
         }
     } else {
@@ -151,34 +154,3 @@ window.addEventListener('scroll', function() {
         }
     }
 });
-
-// Add CSS animations for scroll-to-top button
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    
-    @keyframes fadeOut {
-        from {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        to {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-    }
-    
-    .active-link {
-        color: #6366f1 !important;
-    }
-`;
-document.head.appendChild(style);
